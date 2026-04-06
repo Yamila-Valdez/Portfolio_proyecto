@@ -1,9 +1,14 @@
 :root {
-  --bg-main: #E7EEA6;   /* amarillo pastel */
+  --bg-main: #f6ffb8;   /* amarillo pastel */
   --bg-accent: #b57f66; /* terracota */
   --black: #111111;
   --white: #ffffff;
   --gray: #666;
+}
+
+nav a {
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 * {
@@ -31,30 +36,35 @@ nav {
 }
 
 .logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-family: 'Playfair Display', serif !important;
+  font-size: 24px;
+  font-weight: 400;
 }
 
+/* NAV LISTA */
 nav ul {
   display: flex;
-  gap: 15px;
+  gap: 12px;
   list-style: none;
 }
 
-/* BOTONES NAV */
+/* BOTONES*/
 .nav-btn {
-  text-decoration: none;
-  color: var(--black);
-  border: 1px solid var(--black);
-  padding: 8px 16px;
-  border-radius: 20px;
-  transition: 0.3s;
+  text-decoration: none !important;
+  background: var(--black);
+  color: var(--bg-main) !important;
+  padding: 10px 20px;
+  border-radius: 999px;
   font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  display: inline-block;
+  transition: 0.3s;
+  letter-spacing: 1px;
 }
 
+/* HOVER SUTIL */
 .nav-btn:hover {
-  background: var(--black);
-  color: var(--bg-main);
+  transform: translateY(-2px);
 }
 
 /* HERO */
@@ -82,16 +92,17 @@ nav ul {
   color: var(--gray);
 }
 
-/* BOTÓN */
+/* BOTÓN CV */
 button {
   margin-top: 30px;
   background: var(--black);
   color: var(--bg-main);
   border: none;
   padding: 12px 24px;
-  border-radius: 20px;
+  border-radius: 999px;
   cursor: pointer;
   transition: 0.3s;
+  font-family: 'Playfair Display', serif;
 }
 
 button:hover {
