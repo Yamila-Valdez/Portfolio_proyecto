@@ -45,12 +45,14 @@ El proyecto está deployado en Netlify y se actualiza automáticamente al realiz
 
 ## 📁 Estructura del proyecto
 
+```bash
 /portfolio
-├── index.html
-├── styles.css
-├── /img
-├── /fonts
+│── index.html
+│── styles.css
+│── /img
+│── /fonts
 └── favicon.png
+```
 
 ---
 
