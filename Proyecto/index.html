@@ -2,97 +2,181 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Yam.diseño&código | Portfolio</title>
+  <title>Yamila | Portfolio</title>
 
-  <!-- Tipografías -->
-  <<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
+ <!-- Tipografía -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <h2>Hola! Soy Yamila</h2>
-    <ul>
-      <li><a href="#about">Sobre mí</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Proyectos</a></li>
-      <li><a href="#contact">Contacto</a></li>
-    </ul>
+<!-- HEADER -->
+<header class="header">
+  <nav class="nav">
+    <img src="img/logoyam.png" alt="Logo Yamila" class="logo">
+
+    <div class="nav-right">
+      <a href="#about" class="pill">Sobre mí</a>
+      <a href="#skills" class="pill">Skills</a>
+      <a href="#projects" class="pill">Proyectos</a>
+      <a href="#contact" class="pill">Contacto</a>
+    </div>
   </nav>
+</header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>
-      Diseñadora Gráfica <br>
-      & FrontEnd Developer
+<!-- HERO -->
+<section class="hero">
+  <h1>
+    Diseñadora Gráfica <br>
+    & FrontEnd Developer
+  </h1>
 
-    <a href="https://drive.google.com/drive/folders/1eOu3ENgySRpgzXTLeotrLf6iqLKdBv76" target="_blank">
-      <button>Ver CV</button>
-    </a>
-  </section>
+  <a href="https://drive.google.com/file/d/12jCxW74BSEl3ojDvRI3MkDYJwRW93o4f/view?usp=drive_link" target="_blank" class="cta">
+    Podés ver mi CV →
+  </a>
+</section>
 
-  <!-- SOBRE MI -->
-  <section id="about">
-    <h2>Sobre mí</h2>
+<section class="quote">
+  <div class="quote-card">
     <p>
-      Soy Yamila, apasionada por el diseño visual y el desarrollo web. 
-      Actualmente me estoy formando como Full Stack Developer, combinando 
-      creatividad y lógica para construir experiencias digitales.
+      “El diseño no se trata solo de hacer que algo se vea bien,
+      sino de hacer que <strong>funcione bien</strong>.”
     </p>
-  </section>
+    <span>— Paula Scher</span>
+  </div>
+</section>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
+<!-- ABOUT + SKILLS -->
+<section class="about-skills">
 
-    <div class="skills-container">
-      <div>
-        <h3>Diseño</h3>
-        <p>Illustrator, Photoshop, Figma</p>
-      </div>
+  <div id="about" class="about">
+    <div class="tag">Sobre mí ✧</div>
 
-      <div>
-        <h3>Desarrollo</h3>
-        <p>Python, HTML, CSS, JavaScript</p>
-      </div>
+    <p>
+      Soy Yamila, apasionada por el diseño visual y el desarrollo web.
+      Actualmente me estoy formando como Full Stack Developer, combinando creatividad
+      y lógica para construir experiencias digitales.
+    </p>
+  </div>
+
+  <div id="skills" class="skills">
+    <div class="tag">Mis skills ✧</div>
+
+    <div class="skills-icons">
+      <img src="img/ai.png" alt="Illustrator">
+      <img src="img/ps.png" alt="Photoshop">
+      <img src="img/figma.png" alt="Figma">
+      <img src="img/py.png" alt="Python">
+      <img src="img/js.png" alt="JavaScript">
+      <img src="img/html.png" alt="HTML">
+      <img src="img/css.png" alt="CSS">
     </div>
-  </section>
+  </div>
 
-  <!-- PROYECTOS -->
-  <section id="projects">
-    <h2>Proyectos</h2>
+</section>
 
-    <h3>Diseño</h3>
-    <div class="grid">
-      <a href="https://www.behance.net/gallery/148777861/PORTFOLIO-SOCIAL-MEDIA-2022" target="_blank" class="card">
-        <h4>Proyectos DG</h4>
-        <p>Social Media</p>
+<!-- PROYECTOS -->
+<section id="projects" class="projects">
+
+  <div class="tag dark">Proyectos ↓</div>
+
+  <div class="projects-grid">
+
+    <div class="project-item">
+      <p class="project-label">DG - Social Media</p>
+      <a href="https://www.behance.net/gallery/148777861/PORTFOLIO-SOCIAL-MEDIA-2022" target="_blank">
+        <img src="img/portfolio.png" alt="Proyecto diseño">
       </a>
     </div>
 
-    <h3>Desarrollo</h3>
-    <div class="grid">
-      <a href="https://github.com/repos" target="_blank" class="card">
-        <h4>Proyectos Desarrolladora</h4>
-        <p>Python</p>
-        <p>JavaScript</p>
-        <p>HTML, CSS</p>
+    <div class="project-item">
+      <p class="project-label">Desarrolladora</p>
+      <a href="https://github.com/Yamila-Valdez" target="_blank">
+        <img src="img/desarrolladora.png" alt="Proyecto desarrollo">
       </a>
     </div>
-  </section>
 
-  <!-- CONTACTO -->
-  <section id="contact">
-    <h2>Contacto</h2>
+  </div>
 
-    <form>
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Mensaje" required></textarea>
+</section>
+
+<!-- CONTACTO -->
+<section id="contact" class="contact">
+
+  <div class="contact-title">
+    <span>Contacto ↓</span>
+  </div>
+
+  <div class="contact-box">
+
+    <form class="contact-form">
+      <input type="text" placeholder="Nombre">
+      <input type="text" placeholder="Apellido">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Mensaje"></textarea>
+
       <button type="submit">Enviar</button>
     </form>
-  </section>
+
+    <div class="contact-info">
+      <p>También podés encontrarme en mis redes</p>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/yamila-valdez-aguilar-5b4b71198" target="_blank">
+          <img src="img/linkedin.png" alt="LinkedIn">
+        </a>
+
+        <a href="https://www.instagram.com/yam.antoniet" target="_blank">
+          <img src="img/instagram.png" alt="Instagram">
+        </a>
+      </div>
+
+      <h2>¡Empecemos un proyecto juntos!</h2>
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LOGO + FRASE -->
+    <div class="footer-brand">
+      <img src="img/logoyam.png" alt="Logo Yam">
+      <p>Diseño & Código</p>
+    </div>
+
+    <!-- NAVEGACIÓN -->
+    <div class="footer-links">
+      <a href="#about">Sobre mí</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </div>
+
+    <!-- REDES -->
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/yamila-valdez-aguilar-5b4b71198/" target="_blank">LinkedIn ↗</a>
+      <a href="https://www.instagram.com/yam.antoniet/" target="_blank">Instagram ↗</a>
+    </div>
+
+  </div>
+
+  <!-- LINEA -->
+  <div class="footer-line"></div>
+
+  <!-- COPY -->
+  <p class="footer-copy">
+    © 2026 Yamila Valdez — All rights reserved
+  </p>
+
+</footer>
 
 </body>
 </html>
