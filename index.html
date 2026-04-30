@@ -18,6 +18,20 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
+<script>
+const elements = document.querySelectorAll('.fade-up');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
 <body>
 
 <!-- HEADER -->
@@ -136,7 +150,7 @@
           <img src="img/linkedin.png" alt="LinkedIn">
         </a>
 
-        <a href="https://www.instagram.com/yam.antoniet" target="_blank">
+        <a href="https://www.instagram.com/local.latiendita" target="_blank">
           <img src="img/instagram.png" alt="Instagram">
         </a>
       </div>
@@ -168,11 +182,12 @@
 
     <!-- REDES -->
     <div class="footer-social">
-      <a href="https://www.linkedin.com/in/yamila-valdez-aguilar-5b4b71198/" target="_blank">LinkedIn ↗</a>
-      <a href="https://www.instagram.com/yam.antoniet/" target="_blank">Instagram ↗</a>
+      <a href="https://www.linkedin.com/in/yamila-valdez-aguilar-5b4b71198/" target="_blank" class="footer-btn">LinkedIn ↗</a>
+      <a href="https://www.instagram.com/local.latiendita/" target="_blank" class="footer-btn">Instagram ↗</a>
     </div>
 
   </div>
+</footer>
 
   <!-- LINEA -->
   <div class="footer-line"></div>
