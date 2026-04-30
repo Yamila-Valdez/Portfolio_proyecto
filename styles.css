@@ -232,73 +232,85 @@ body {
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
 
-  /* HEADER */
-  .nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .logo {
-    width: 110px;
-  }
-
-  .nav-right {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   /* HERO */
+  .hero h1 {
+    font-size: clamp(36px, 8vw, 52px);
+    line-height: 1.1;
+    text-align: center;
+  }
+
   .hero {
     padding: 40px 20px;
   }
 
-  .hero h1 {
-    font-size: clamp(40px, 9vw, 60px);
+  /* NAV */
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 
   /* QUOTE */
   .quote {
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
 
-  .quote-card {
-    padding: 50px 20px;
-  }
-
-  .quote-card::before {
-    font-size: 120px;
-    left: 10px;
-  }
-
-  .quote-card::after {
-    font-size: 120px;
-    right: 10px;
+  .quote p {
+    font-size: 18px;
   }
 
   /* ABOUT */
   .about p {
-    font-size: 18px;
+    font-size: 16px;
+    text-align: center;
   }
 
   /* SKILLS */
+  .skills-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
   .skills-icons img {
     width: 50px;
   }
 
   /* PROJECTS */
   .projects-grid {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 25px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 320px;
   }
 
   /* CONTACT */
   .contact-box {
+    display: flex;
     flex-direction: column;
+    gap: 30px;
   }
 
-  .contact-form,
-  .contact-info {
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
     width: 100%;
+  }
+
+  /* ICONOS REDES */
+  .contact-info img {
+    width: 80px;
+    height: auto;
   }
 
   /* FOOTER */
@@ -306,6 +318,11 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 20px;
   }
-
+  
+a {
+  text-decoration: none;
+  color: inherit;
+}
 }
