@@ -572,7 +572,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 10px 0 0;
+  margin: 35px auto -10px;
   margin-bottom: 0;
   text-align: center;
 }
@@ -604,11 +604,14 @@ body {
   }
 
   .footer-links,
-  .footer-social {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+  .footer-social a {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #d6e07b; /* tu color */
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
 
   .footer-line {
     margin: 25px auto;
@@ -654,6 +657,18 @@ body {
 .fade-up.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.footer-social a:hover {
+  background-color: #d6e07b;
+  color: #1e1e1e;
+  transform: translateY(-2px);
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 }
