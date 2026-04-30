@@ -459,7 +459,7 @@ body {
   /* HERO */
   .hero {
     min-height: auto;
-    padding: 110px 20px 70px;
+    padding: 80px 20px 30px;
     gap: 25px;
   }
 
@@ -469,18 +469,19 @@ body {
     text-align: center;
     max-width: 320px;
     margin: 0 auto 35px;
+    margin-bottom: 20px;
   }
 
   .cta {
     font-size: 14px;
     padding: 12px 22px;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   /* QUOTE */
   .quote {
-    padding: 40px 20px 60px;
+    padding: 30px 20px 60px;
   }
 
   .quote-card {
@@ -539,7 +540,7 @@ body {
 
   /* CONTACT */
   .contact {
-    padding: 80px 20px 40px;
+    padding: 80px 20px 20px;
   }
 
   .contact-box {
@@ -563,13 +564,16 @@ body {
   }
 
   /* 🔧 Ajustes */
-  .contact-info h2 {
-    font-size: 22px;        
-    font-weight: 600;       
-    max-width: 320px;      
-    margin: 30px auto 10px; 
-    text-align: center;
-  }
+ .contact-info h2 {
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px auto 0;
+  margin-bottom: 0;
+  text-align: center;
+}
 
   /* ICONOS */
   .social-icons {
@@ -579,7 +583,7 @@ body {
   }
 
   .social-icons img {
-    width: 65px; 
+    width: 70px; 
   }
 
   /* FOOTER */
@@ -592,6 +596,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 0;
     gap: 10px;
   }
 
