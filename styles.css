@@ -114,29 +114,29 @@ body {
 .about-skills {
   background: var(--bg-accent);
   color: var(--white);
-  padding: 180px 60px;
+  padding: 120px 60px;
   text-align: center;
 }
 
 .tag {
   background: var(--bg-dark);
   color: var(--bg-main);   
-  font-size: 18px;
-  padding: 14px 34px;
+  font-size: 20px;
+  padding: 16px 36px;
   border-radius: 999px;
   display: inline-block;
   margin-bottom: 30px;
 }
 
 .about p {
-  font-size: 20px;
-  max-width: 800px;
+  font-size: 22px;
+  max-width: 700px;
   margin: auto;
   line-height: 1.7;
 }
 
 .skills {
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 .skills-icons {
@@ -148,7 +148,7 @@ body {
 }
 
 .skills-icons img {
-  width: 65px;
+  width: 75px;
   filter: brightness(0) invert(1);
 }
 
@@ -210,7 +210,7 @@ body {
 /* CONTACTO */
 .contact {
   background: var(--bg-main);
-  padding: 120px 60px;
+  padding: 120px 60px 30px;
 }
 
 .contact-title {
@@ -361,8 +361,8 @@ body {
 .footer {
   background: var(--bg-dark);
   color: var(--bg-main);
-  padding: 80px 40px 40px;
-  margin-top: 120px;
+  padding: 60px 40px 30px;
+  margin-top: 0;
 }
 
 /* CONTENEDOR */
@@ -540,7 +540,7 @@ body {
 
   /* CONTACT */
   .contact {
-    padding: 80px 20px 20px;
+    padding: 80px 20px 5px;
   }
 
   .contact-box {
@@ -553,16 +553,13 @@ body {
   margin-bottom: 0;
 }
 
-  .contact-info {
-    width: 100%;
-    margin-top: 0;
-}
-
 .contact-info {
+  width: 100%;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px; /* controla el espacio ENTRE texto, iconos y frase */
+  gap: 10px;
 }
 
 .contact-info p {

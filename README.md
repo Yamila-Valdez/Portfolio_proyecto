@@ -3,7 +3,7 @@
 Este es mi portfolio personal como Diseñadora Gráfica y Frontend Developer, donde presento mis proyectos, habilidades y formas de contacto.
 
 🔗 **Ver sitio en vivo:**  
-https://portfolio-yamilavaldezaguilar.netlify.app/
+https://portfolio-valdezaguilaryamila.vercel.app/
 
 ---
 
