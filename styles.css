@@ -149,7 +149,6 @@ body {
 
 .skills-icons img {
   width: 75px;
-  filter: brightness(0) invert(1);
 }
 
 /* PROYECTOS */
@@ -357,88 +356,68 @@ body {
   font-family: serif;
 }
 
-/* FOOTER PRO */
+/* FOOTER */
 .footer {
-  background: var(--bg-dark);
-  color: var(--bg-main);
-  padding: 60px 40px 30px;
-  margin-top: 0;
+  background: #0f1116;
+  color: #fff;
+  padding: 60px 20px 30px;
 }
 
-/* CONTENEDOR */
 .footer-container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 60px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
-/* LOGO */
-.footer-brand img {
-  width: 90px;
+.footer-logo {
+  width: 120px;
   margin-bottom: 10px;
 }
 
-.footer-brand p {
+.footer-desc {
+  color: #aaa;
   font-size: 14px;
-  opacity: 0.6;
+  max-width: 280px;
 }
 
-/* LINKS */
+.footer-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
 .footer-links,
 .footer-social {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
-/* ESTILO LINKS */
 .footer a {
-  color: var(--bg-main);
+  color: #aaa;
   text-decoration: none;
-  font-size: 15px;
-  position: relative;
-  width: fit-content;
+  font-size: 14px;
   transition: 0.3s;
 }
 
-/* SUBRAYADO PRO */
-.footer a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0%;
-  height: 1px;
-  background: var(--bg-main);
-  transition: 0.3s;
-}
-
-.footer a:hover::after {
-  width: 100%;
-}
-
-/* HOVER SUTIL */
 .footer a:hover {
-  opacity: 0.7;
+  color: #fff;
 }
 
-/* LINEA DIVISORIA */
-.footer-line {
+.footer-divider {
   height: 1px;
-  background: rgba(255,255,255,0.1);
-  margin: 50px auto 20px;
-  max-width: 1200px;
+  background: #222;
+  margin: 40px auto 20px;
+  max-width: 1100px;
 }
 
-/* COPY */
 .footer-copy {
   text-align: center;
   font-size: 13px;
-  opacity: 0.5;
+  color: #777;
 }
 
 /* ================= MOBILE ================= */
@@ -688,4 +667,14 @@ body {
   flex-direction: column;
   gap: 10px;
 }
+
+.contact-form {
+  max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+}
+
 }
